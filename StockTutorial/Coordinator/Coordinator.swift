@@ -7,12 +7,10 @@
 
 import UIKit
 
-class Coordinator {
+protocol Coordinator  {
     
-    func start(window: UIWindow, rootViewController: UIViewController) {
-        let rootViewController = UINavigationController(rootViewController: rootViewController)
-        window.rootViewController = rootViewController
-        window.makeKeyAndVisible()
-    }
+    var navigationController: UINavigationController? { get set }
+    
+    func start()
     
 }

@@ -18,6 +18,22 @@ class StockListController: BaseViewController {
         selfView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         selfView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         selfView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+        selfView.searchViewController.delegate = self
+        selfView.searchViewController.searchResultsUpdater = self
+        navigationItem.searchController = selfView.searchViewController
+    }
+    
+}
+
+extension StockListController: UISearchControllerDelegate {
+    
+}
+
+extension StockListController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        
     }
     
 }

@@ -1,14 +1,14 @@
 struct AppDependency {
     
-    let coordinator: Coordinator
+    let mainCoordinator: MainCoordinator
 
 }
 
 extension AppDependency {
     
     static func reslove() -> AppDependency {
-        let coordinator: Coordinator = .init()
-        return .init(coordinator: coordinator)
+        let coordinator: MainCoordinator = .init()
+        return .init(mainCoordinator: coordinator)
     }
     
 }
