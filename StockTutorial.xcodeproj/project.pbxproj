@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,10 @@
 		DED70BEE26B11258005749F1 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BED26B11258005749F1 /* Stock.swift */; };
 		DED70BF026B115AC005749F1 /* StockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BEF26B115AC005749F1 /* StockUseCase.swift */; };
 		DED70BF326B11673005749F1 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BF226B11673005749F1 /* StockListViewModel.swift */; };
+		DED70BF526B1B8A8005749F1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BF426B1B8A8005749F1 /* LoadingView.swift */; };
+		DED70BF726B1BA1F005749F1 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BF626B1BA1F005749F1 /* Font.swift */; };
+		DED70BF926B1BAD5005749F1 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BF826B1BAD5005749F1 /* StockCell.swift */; };
+		DED70BFB26B1BD26005749F1 /* StockList+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BFA26B1BD26005749F1 /* StockList+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		DED70BED26B11258005749F1 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		DED70BEF26B115AC005749F1 /* StockUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockUseCase.swift; sourceTree = "<group>"; };
 		DED70BF226B11673005749F1 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
+		DED70BF426B1B8A8005749F1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		DED70BF626B1BA1F005749F1 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		DED70BF826B1BAD5005749F1 /* StockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
+		DED70BFA26B1BD26005749F1 /* StockList+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockList+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +84,6 @@
 				7A2EB34E4B859134EF8D8B75 /* Pods-StockTutorial.debug.xcconfig */,
 				689B70F496DA39B26F7120B8 /* Pods-StockTutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -141,6 +148,7 @@
 			children = (
 				DED70BDA26B067BB005749F1 /* BaseViewController.swift */,
 				DED70BDC26B0682A005749F1 /* StockListController.swift */,
+				DED70BFA26B1BD26005749F1 /* StockList+TableView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +165,9 @@
 		DED70BD626B0677C005749F1 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				DED70BF426B1B8A8005749F1 /* LoadingView.swift */,
+				DED70BF626B1BA1F005749F1 /* Font.swift */,
+				DED70BF826B1BAD5005749F1 /* StockCell.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -311,13 +322,17 @@
 				DED70BF326B11673005749F1 /* StockListViewModel.swift in Sources */,
 				DED70BDD26B0682A005749F1 /* StockListController.swift in Sources */,
 				DED70BEE26B11258005749F1 /* Stock.swift in Sources */,
+				DED70BF926B1BAD5005749F1 /* StockCell.swift in Sources */,
 				DED70BBF26B06595005749F1 /* AppDelegate.swift in Sources */,
 				DED70BDF26B06874005749F1 /* BaseView.swift in Sources */,
 				DED70BEA26B070FC005749F1 /* StockRepository.swift in Sources */,
 				DED70BEC26B0711F005749F1 /* StockRepositoryImpl.swift in Sources */,
+				DED70BF526B1B8A8005749F1 /* LoadingView.swift in Sources */,
+				DED70BFB26B1BD26005749F1 /* StockList+TableView.swift in Sources */,
 				DED70BE226B068CA005749F1 /* StockListView.swift in Sources */,
 				DED70BC126B06595005749F1 /* SceneDelegate.swift in Sources */,
 				DED70BDB26B067BB005749F1 /* BaseViewController.swift in Sources */,
+				DED70BF726B1BA1F005749F1 /* Font.swift in Sources */,
 				DED70BE826B06E3E005749F1 /* MainCoordinator.swift in Sources */,
 				DED70BF026B115AC005749F1 /* StockUseCase.swift in Sources */,
 				DED70BE426B06A86005749F1 /* Coordinator.swift in Sources */,

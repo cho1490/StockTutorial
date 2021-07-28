@@ -6,8 +6,13 @@
 //
 
 import UIKit
+import Combine
+import RxSwift
 
 class BaseViewController: UIViewController {
+    
+    let disposeBag = DisposeBag()
+    var subscriber: Set<AnyCancellable> = .init()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
