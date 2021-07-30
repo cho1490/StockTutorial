@@ -28,6 +28,11 @@
 		DED70BF726B1BA1F005749F1 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BF626B1BA1F005749F1 /* Font.swift */; };
 		DED70BF926B1BAD5005749F1 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BF826B1BAD5005749F1 /* StockCell.swift */; };
 		DED70BFB26B1BD26005749F1 /* StockList+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BFA26B1BD26005749F1 /* StockList+TableView.swift */; };
+		DED70BFD26B3D313005749F1 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BFC26B3D313005749F1 /* EmptyView.swift */; };
+		DED70BFF26B3D80C005749F1 /* StockDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70BFE26B3D80C005749F1 /* StockDetailController.swift */; };
+		DED70C0126B3DFF4005749F1 /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C0026B3DFF4005749F1 /* StockDetailView.swift */; };
+		DED70C0326B3E9B0005749F1 /* StockDetailBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C0226B3E9B0005749F1 /* StockDetailBottomView.swift */; };
+		DED70C0526B3E9D6005749F1 /* StockDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C0426B3E9D6005749F1 /* StockDetailTopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		DED70BF626B1BA1F005749F1 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		DED70BF826B1BAD5005749F1 /* StockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
 		DED70BFA26B1BD26005749F1 /* StockList+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockList+TableView.swift"; sourceTree = "<group>"; };
+		DED70BFC26B3D313005749F1 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		DED70BFE26B3D80C005749F1 /* StockDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailController.swift; sourceTree = "<group>"; };
+		DED70C0026B3DFF4005749F1 /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
+		DED70C0226B3E9B0005749F1 /* StockDetailBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailBottomView.swift; sourceTree = "<group>"; };
+		DED70C0426B3E9D6005749F1 /* StockDetailTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailTopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +159,7 @@
 				DED70BDA26B067BB005749F1 /* BaseViewController.swift */,
 				DED70BDC26B0682A005749F1 /* StockListController.swift */,
 				DED70BFA26B1BD26005749F1 /* StockList+TableView.swift */,
+				DED70BFE26B3D80C005749F1 /* StockDetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -158,6 +169,10 @@
 			children = (
 				DED70BDE26B06874005749F1 /* BaseView.swift */,
 				DED70BE126B068CA005749F1 /* StockListView.swift */,
+				DED70BFC26B3D313005749F1 /* EmptyView.swift */,
+				DED70C0026B3DFF4005749F1 /* StockDetailView.swift */,
+				DED70C0226B3E9B0005749F1 /* StockDetailBottomView.swift */,
+				DED70C0426B3E9D6005749F1 /* StockDetailTopView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,10 +334,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED70BE626B06B09005749F1 /* CompositionRoot.swift in Sources */,
+				DED70C0326B3E9B0005749F1 /* StockDetailBottomView.swift in Sources */,
 				DED70BF326B11673005749F1 /* StockListViewModel.swift in Sources */,
 				DED70BDD26B0682A005749F1 /* StockListController.swift in Sources */,
 				DED70BEE26B11258005749F1 /* Stock.swift in Sources */,
 				DED70BF926B1BAD5005749F1 /* StockCell.swift in Sources */,
+				DED70BFF26B3D80C005749F1 /* StockDetailController.swift in Sources */,
+				DED70BFD26B3D313005749F1 /* EmptyView.swift in Sources */,
+				DED70C0526B3E9D6005749F1 /* StockDetailTopView.swift in Sources */,
+				DED70C0126B3DFF4005749F1 /* StockDetailView.swift in Sources */,
 				DED70BBF26B06595005749F1 /* AppDelegate.swift in Sources */,
 				DED70BDF26B06874005749F1 /* BaseView.swift in Sources */,
 				DED70BEA26B070FC005749F1 /* StockRepository.swift in Sources */,

@@ -18,6 +18,7 @@ class StockListController: BaseViewController, FactoryModule {
     
     let selfView = StockListView()
     let viewModel: StockListViewModel
+    var coordinator: MainCoordinator?
     
     required init(dependency: Dependency, payload: ()) {
         viewModel = dependency.viewModel
@@ -32,6 +33,14 @@ class StockListController: BaseViewController, FactoryModule {
         super.viewDidLoad()
         bind()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        enableScrollWhenKeyboardAppeared(scrollView: selfView.tableView)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        removeListeners()
     }
     
     override func configureUI() {
@@ -49,7 +58,6 @@ class StockListController: BaseViewController, FactoryModule {
     }
     
     func bind() {
-        
         selfView.searchViewController.searchBar.rx.text.debounce(.milliseconds(300), scheduler: MainScheduler.instance).subscribe(onNext: { [unowned self] text in
             guard let text = text, !text.isEmpty else { return }
             self.viewModel.searchQueryChanged(query: text)
@@ -66,6 +74,10 @@ class StockListController: BaseViewController, FactoryModule {
         
         viewModel.$loading.sink { [unowned self] loading in
             self.selfView.loadingView.isHidden = !loading
+        }.store(in: &subscriber)
+        
+        viewModel.$isEmpty.sink { [unowned self] isEmpty in
+            self.selfView.emptyView.isHidden = !isEmpty
         }.store(in: &subscriber)
         
 //        RxSwift
