@@ -85,4 +85,5 @@ class StockDetailBottomView: BaseView {
             valueLabel.text = value
         }
     }
+    
 }
