@@ -34,6 +34,13 @@
 		DED70C0326B3E9B0005749F1 /* StockDetailBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C0226B3E9B0005749F1 /* StockDetailBottomView.swift */; };
 		DED70C0526B3E9D6005749F1 /* StockDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C0426B3E9D6005749F1 /* StockDetailTopView.swift */; };
 		DED70C0726B44A22005749F1 /* TimeSeriesMonthlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C0626B44A22005749F1 /* TimeSeriesMonthlyAdjusted.swift */; };
+		DED70C0926B523CA005749F1 /* StockDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C0826B523CA005749F1 /* StockDetailViewModel.swift */; };
+		DED70C0C26B52401005749F1 /* Error+ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C0B26B52401005749F1 /* Error+ErrorDescription.swift */; };
+		DED70C0E26B5251C005749F1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C0D26B5251C005749F1 /* BaseViewModel.swift */; };
+		DED70C1026B52632005749F1 /* StockDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C0F26B52632005749F1 /* StockDetailUseCase.swift */; };
+		DED70C1226B673B2005749F1 /* MonthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C1126B673B2005749F1 /* MonthInfo.swift */; };
+		DED70C1426B6CD31005749F1 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C1326B6CD31005749F1 /* UITextField.swift */; };
+		DED70C1626B6E533005749F1 /* SelectDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED70C1526B6E533005749F1 /* SelectDateController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +75,13 @@
 		DED70C0226B3E9B0005749F1 /* StockDetailBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailBottomView.swift; sourceTree = "<group>"; };
 		DED70C0426B3E9D6005749F1 /* StockDetailTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailTopView.swift; sourceTree = "<group>"; };
 		DED70C0626B44A22005749F1 /* TimeSeriesMonthlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMonthlyAdjusted.swift; sourceTree = "<group>"; };
+		DED70C0826B523CA005749F1 /* StockDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewModel.swift; sourceTree = "<group>"; };
+		DED70C0B26B52401005749F1 /* Error+ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+ErrorDescription.swift"; sourceTree = "<group>"; };
+		DED70C0D26B5251C005749F1 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		DED70C0F26B52632005749F1 /* StockDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailUseCase.swift; sourceTree = "<group>"; };
+		DED70C1126B673B2005749F1 /* MonthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthInfo.swift; sourceTree = "<group>"; };
+		DED70C1326B6CD31005749F1 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		DED70C1526B6E533005749F1 /* SelectDateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +134,7 @@
 		DED70BBD26B06595005749F1 /* StockTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				DED70C0A26B523F0005749F1 /* Extensions */,
 				DED70BD926B06792005749F1 /* Domain */,
 				DED70BD826B06789005749F1 /* Repository */,
 				DED70BD726B06783005749F1 /* Model */,
@@ -162,6 +177,7 @@
 				DED70BDC26B0682A005749F1 /* StockListController.swift */,
 				DED70BFA26B1BD26005749F1 /* StockList+TableView.swift */,
 				DED70BFE26B3D80C005749F1 /* StockDetailController.swift */,
+				DED70C1526B6E533005749F1 /* SelectDateController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +210,7 @@
 			children = (
 				DED70BED26B11258005749F1 /* Stock.swift */,
 				DED70C0626B44A22005749F1 /* TimeSeriesMonthlyAdjusted.swift */,
+				DED70C1126B673B2005749F1 /* MonthInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				DED70BEF26B115AC005749F1 /* StockUseCase.swift */,
+				DED70C0F26B52632005749F1 /* StockDetailUseCase.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -218,9 +236,20 @@
 		DED70BF126B1163F005749F1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DED70C0D26B5251C005749F1 /* BaseViewModel.swift */,
 				DED70BF226B11673005749F1 /* StockListViewModel.swift */,
+				DED70C0826B523CA005749F1 /* StockDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DED70C0A26B523F0005749F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DED70C0B26B52401005749F1 /* Error+ErrorDescription.swift */,
+				DED70C1326B6CD31005749F1 /* UITextField.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,14 +369,19 @@
 				DED70C0326B3E9B0005749F1 /* StockDetailBottomView.swift in Sources */,
 				DED70BF326B11673005749F1 /* StockListViewModel.swift in Sources */,
 				DED70BDD26B0682A005749F1 /* StockListController.swift in Sources */,
+				DED70C0C26B52401005749F1 /* Error+ErrorDescription.swift in Sources */,
+				DED70C0E26B5251C005749F1 /* BaseViewModel.swift in Sources */,
 				DED70BEE26B11258005749F1 /* Stock.swift in Sources */,
 				DED70BF926B1BAD5005749F1 /* StockCell.swift in Sources */,
 				DED70BFF26B3D80C005749F1 /* StockDetailController.swift in Sources */,
 				DED70BFD26B3D313005749F1 /* EmptyView.swift in Sources */,
 				DED70C0526B3E9D6005749F1 /* StockDetailTopView.swift in Sources */,
+				DED70C1426B6CD31005749F1 /* UITextField.swift in Sources */,
+				DED70C0926B523CA005749F1 /* StockDetailViewModel.swift in Sources */,
 				DED70C0126B3DFF4005749F1 /* StockDetailView.swift in Sources */,
 				DED70BBF26B06595005749F1 /* AppDelegate.swift in Sources */,
 				DED70C0726B44A22005749F1 /* TimeSeriesMonthlyAdjusted.swift in Sources */,
+				DED70C1626B6E533005749F1 /* SelectDateController.swift in Sources */,
 				DED70BDF26B06874005749F1 /* BaseView.swift in Sources */,
 				DED70BEA26B070FC005749F1 /* StockRepository.swift in Sources */,
 				DED70BEC26B0711F005749F1 /* StockRepositoryImpl.swift in Sources */,
@@ -358,8 +392,10 @@
 				DED70BDB26B067BB005749F1 /* BaseViewController.swift in Sources */,
 				DED70BF726B1BA1F005749F1 /* Font.swift in Sources */,
 				DED70BE826B06E3E005749F1 /* MainCoordinator.swift in Sources */,
+				DED70C1226B673B2005749F1 /* MonthInfo.swift in Sources */,
 				DED70BF026B115AC005749F1 /* StockUseCase.swift in Sources */,
 				DED70BE426B06A86005749F1 /* Coordinator.swift in Sources */,
+				DED70C1026B52632005749F1 /* StockDetailUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

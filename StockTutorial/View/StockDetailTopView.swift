@@ -20,18 +20,13 @@ class StockDetailTopView: BaseView {
     let annualReturnLabel = SmallLabel()
     let annualReturnValueLabel = SmallBoldLabel()
     
+    func configureUI(stock: Stock) {
+        titleLabel.text = stock.symbol
+        subTitleLabel.text = stock.name
+        currentValueTextLabel.text = "Current Value (\(stock.currency ?? ""))"
+    }
+    
     override func configureUI() {
-        titleLabel.text = "SPY"
-        subTitleLabel.text = "SPY"
-        currentValueTextLabel.text = "SPY"
-        currentValueValueLabel.text = "SPY"
-        investmentLabel.text = "SPY"
-        investmentValueLabel.text = "SPY"
-        gainLabel.text = "SPY"
-        gainValueLabel.text = "SPY"
-        annualReturnLabel.text = "SPY"
-        annualReturnValueLabel.text = "SPY"
-        
         addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(subTitleLabel)
